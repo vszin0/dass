@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스터 상세 - DASS 2025 CONFERENCE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="poster-detail-body text-gray-300 font-pretendard">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-sm shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="https://i.ibb.co/fGHnW1dW/dass.png" alt="DASS Logo" class="h-[1.6rem]">
+            </a>
+            <a href="index.html#posters" class="text-gray-300 hover:text-white transition-colors inline-flex items-center bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full text-sm font-semibold">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i> 목록으로 돌아가기
+            </a>
+        </div>
+    </header>
+
+    <div class="flex flex-col min-h-screen bg-gray-950/95">
+        <main class="flex-grow pt-24">
+            <section id="poster-detail" class="py-12">
+                <div class="container mx-auto px-6">
+                    <h2 id="poster-title" class="text-3xl md:text-4xl font-bold text-center mb-10 text-white"></h2>
+                    <div id="poster-image-container" class="max-w-4xl mx-auto mb-10 bg-gray-800/50 p-2 rounded-lg">
+                        <img id="poster-image" src="" alt="" class="w-full h-auto rounded-md shadow-2xl shadow-blue-500/20">
+                    </div>
+                    <div id="poster-actions" class="flex justify-center items-center gap-4">
+                        <button id="download-button" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-colors text-lg w-full sm:w-auto">
+                            <i data-lucide="download" class="w-5 h-5 mr-3"></i>다운로드
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer id="footer" class="py-12 mt-16">
+            <div class="container mx-auto px-6 text-center text-gray-500">
+                <div class="mb-8">
+                    <h4 class="font-semibold text-gray-400 mb-4">주최 / 주관</h4>
+                    <p>DASS (Digital Dentistry & Art-engineering Society)</p>
+                </div>
+                <div class="mb-8">
+                    <h4 class="font-semibold text-gray-400 mb-4">후원</h4>
+                    <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3">
+                        <span>하이니스</span>
+                        <span>리뉴메디칼</span>
+                        <span>서티라이프</span>
+                        <span>오스템</span>
+                        <span>메디클러스</span>
+                        <span>더원덴탈</span>
+                        <span>덴츠플라이시로나</span>
+                        <span>두리덴탈</span>
+                        <span>덴탈스튜디오</span>
+                        <span>이룸</span>
+                    </div>
+                </div>
+                <p class="text-sm">&copy; 2025 DASS Conference. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="poster_detail.js"></script>
+</body>
+</html>

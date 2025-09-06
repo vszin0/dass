@@ -1,0 +1,318 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+
+:root {
+    --color-bg-dark: #030712;
+    --color-bg-primary: #111827;
+    --color-bg-secondary: #1F2937;
+    --color-text-primary: #F9FAFB;
+    --color-text-secondary: #D1D5DB;
+    --color-accent: #3B82F6;
+    --color-accent-hover: #2563EB;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-dark);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: transparent;
+}
+
+#header.scrolled {
+    background-color: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.active {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+    color: var(--color-text-primary);
+    position: relative;
+    padding-bottom: 0.75rem;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-accent);
+    border-radius: 2px;
+}
+
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.font-cinzel {
+    font-family: 'Cinzel Decorative', serif;
+}
+
+body.poster-detail-body,
+body.speaker-detail-body {
+    background-image: url('https://r2.flowith.net/files/11232ec1-f84c-415c-b19c-9744f8097a44/1753119993926-2@4x@1371x2000.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes popup-fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.popup-animate {
+    animation: popup-fade-in-up 0.4s ease-out forwards;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden */
+}
+
+/* Program Timeline */
+.timeline-item {
+    position: relative;
+    padding: 2rem 0;
+    padding-left: 2.5rem;
+    border-left: 2px solid #374151;
+}
+.timeline-item:last-child {
+    border-image: linear-gradient(to bottom, #374151, transparent) 1 100%;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -0.7rem;
+    top: 2rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    background-color: #1F2937;
+    border: 3px solid var(--color-accent);
+}
+
+.timeline-time {
+    position: absolute;
+    left: -6rem;
+    top: 2rem;
+    width: 5rem;
+    text-align: right;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+
+/* Specific prize image scaling */
+#popup-image[src=\\\"https://i.ibb.co/x86BRjM7/image.png\\\"],
+#popup-image[src=\\\"https://i.ibb.co/PzfsRPMQ/image.png\\\"] {
+    transform: scale(1.3);
+}
+
+/* Responsive Backgrounds */
+@media (min-width: 768px) {
+    body:not(.ebook-body) {
+        background-image: url('https://r2.flowith.net/files/11232ec1-f84c-415c-b19c-9744f8097a44/1753119993926-2@4x@1371x2000.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 767px) {
+    #home {
+        background-image: url('https://r2.flowith.net/files/11232ec1-f84c-415c-b19c-9744f8097a44/1753119993926-2@4x@1371x2000.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    main > section:not(#home), #footer {
+        background-color: var(--color-bg-dark) !important;
+    }
+
+    .timeline-item {
+        padding-left: 1.5rem;
+    }
+    .timeline-time {
+        position: static;
+        width: auto;
+        text-align: left;
+        margin-bottom: 0.5rem;
+        font-size: 0.875rem;
+        color: #9CA3AF;
+    }
+    .timeline-dot {
+        left: -0.6rem;
+    }
+}
+
+/* Footer Decorations */
+@keyframes fly-left {
+    0% {
+        left: -10%;
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+    100% {
+        left: 110%;
+        opacity: 0;
+    }
+}
+
+@keyframes fly-right {
+    0% {
+        right: -10%;
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+    100% {
+        right: 110%;
+        opacity: 0;
+    }
+}
+
+.bullet {
+    position: absolute;
+    width: 12px;
+    height: 4px;
+    background: #c0c0c0; /* silver */
+    border-radius: 50px;
+    box-shadow: 0 0 5px #d1d5db, 0 0 10px #d1d5db; /* silver glow */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.bullet::after {
+    content: '';
+    position: absolute;
+    right: 8px; /* start trail just behind the bullet head */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #c0c0c0); /* silver */
+    border-radius: 2px;
+}
+
+.bullet.from-left {
+    animation-name: fly-left;
+}
+
+.bullet.from-right {
+    transform: scaleX(-1); /* Flips bullet and its ::after pseudo-element */
+    animation-name: fly-right;
+}
+
+/* E-book Styles */
+body.ebook-body {
+    background-color: #374151; /* gray-700 */
+}
+
+.ebook-main {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.ebook-page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 0 auto 2rem auto;
+    background: white;
+    color: black;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-sizing: border-box;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+}
+
+.ebook-page h1, .ebook-page h2, .ebook-page h3, .ebook-page h4, .ebook-page h5, .ebook-page h6 {
+    font-family: 'Pretendard', sans-serif;
+    color: #111827; /* gray-900 */
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    body.ebook-body {
+        background-color: white;
+    }
+    .ebook-main {
+        padding: 0;
+        margin: 0;
+    }
+    .ebook-page {
+        width: 100%;
+        min-height: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 1.5cm;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASS 2025 CONFERENCE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="text-gray-300 font-pretendard">
+
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center">
+                <img src="https://i.ibb.co/fGHnW1dW/dass.png" alt="DASS Logo" class="h-[1.6rem]">
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="nav-link text-gray-300 hover:text-white transition-colors">소개</a>
+                <a href="#greetings" class="nav-link text-gray-300 hover:text-white transition-colors">인사말</a>
+                <a href="#program" class="nav-link text-gray-300 hover:text-white transition-colors">프로그램</a>
+                <a href="#speakers" class="nav-link text-gray-300 hover:text-white transition-colors">연자</a>
+                <a href="#posters" class="nav-link text-gray-300 hover:text-white transition-colors">포스터</a>
+                <a href="#prizes" class="nav-link text-gray-300 hover:text-white transition-colors">경품</a>
+                <a href="#venue" class="nav-link text-gray-300 hover:text-white transition-colors">오시는 길</a>
+                <button class="event-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">이벤트</button>
+                <a href="ebook.html" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">EBOOK</a>
+                <a href="#register" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">사전등록</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="text-white"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 backdrop-blur-sm">
+            <nav class="flex flex-col items-center space-y-4 py-4">
+                <a href="#about" class="nav-link text-gray-300 hover:text-white transition-colors">소개</a>
+                <a href="#greetings" class="nav-link text-gray-300 hover:text-white transition-colors">인사말</a>
+                <a href="#program" class="nav-link text-gray-300 hover:text-white transition-colors">프로그램</a>
+                <a href="#speakers" class="nav-link text-gray-300 hover:text-white transition-colors">연자</a>
+                <a href="#posters" class="nav-link text-gray-300 hover:text-white transition-colors">포스터</a>
+                <a href="#prizes" class="nav-link text-gray-300 hover:text-white transition-colors">경품</a>
+                <a href="#venue" class="nav-link text-gray-300 hover:text-white transition-colors">오시는 길</a>
+                <button class="event-trigger bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">이벤트</button>
+                <a href="ebook.html" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">EBOOK</a>
+                <a href="#register" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors">사전등록</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative min-h-screen flex items-center justify-center text-center text-white">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative z-10 px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight tracking-tighter animate-fade-in-down">2025 DASS CONFERENCE</h1>
+                <p class="text-xl md:text-3xl font-bold text-blue-400 mb-6 animate-fade-in-up" style="animation-delay: 0.3s;">The Magnificent Dentist 7's Survival Insight</p>
+                <div class="max-w-2xl mx-auto text-lg md:text-xl space-y-2 mb-8 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <p><i data-lucide="calendar" class="inline-block w-5 h-5 mr-2"></i>2025년 9월 21일 (일)</p>
+                    <p><i data-lucide="map-pin" class="inline-block w-5 h-5 mr-2"></i>대전신협중앙회관 (둔산동)</p>
+                </div>
+                <a href="#register" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105 animate-fade-in-up" style="animation-delay: 0.9s;">
+                    사전 등록 바로가기
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-32 bg-gray-950/95">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title scroll-animate">컨퍼런스 소개</h2>
+                <div class="max-w-4xl mx-auto mt-12 grid md:grid-cols-2 gap-12 text-left">
+                    <div class="scroll-animate">
+                        <h3 class="text-2xl font-bold text-blue-400 mb-4">개최 목적</h3>
+                        <div class="text-gray-400 leading-relaxed space-y-4">
+                            <p>
+                                <strong>DASS(Digital Art & Science Society)</strong>는 2023년 4월부터 치의학의 미래를 함께 모색하고, 최신 트렌드와 기술을 공유하기 위해 결성되었습니다.
+                            </p>
+                            <p>
+                                이번 컨퍼런스의 대주제 "7 Masters, 7 Insights: Shaping the New Era of Dentistry" 아래,
+                                치의학 각 분야의 전문 연자 7인이 각자의 통찰과 방향성을 담은 강의가 준비되어 있습니다.
+                            </p>
+                            <p>
+                                이번 만남을 통해 참여자들은 다음과 같은 소중한 경험을 나누게 될 것입니다.
+                            </p>
+                            <ul class="list-none p-0 mt-4 space-y-2 text-gray-300">
+                                <li class="flex"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0"></i><span>디지털 트렌드와 과학적 근거를 결합한 최신 지식 습득</span></li>
+                                <li class="flex"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0"></i><span>동료 치과의사들과의 소통 및 네트워킹</span></li>
+                                <li class="flex"><i data-lucide="check-circle-2" class="w-5 h-5 text-blue-400 mr-3 flex-shrink-0"></i><span>미래 치의학 발전 방향에 대한 인사이트 공유</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="scroll-animate">
+                        <h3 class="text-2xl font-bold text-blue-400 mb-4">핵심 메시지</h3>
+                        <p class="font-semibold text-xl mb-4">교합, 보철, 경영, 디지털, 투자까지,<br>치과 임상의 판도를 바꾸는 7가지 생존 인사이트</p>
+                        <div class="border-l-4 border-blue-500 pl-4 text-gray-400 space-y-4">
+                            <p><strong>일시:</strong> 2025년 9월 21일 (일) 09:00 ~ 17:00</p>
+                            <p><strong>장소:</strong> 대전신협중앙회관 (둔산동)</p>
+                            <p><strong>주최/주관:</strong> DASS (Digital Art & Science Society)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-20 scroll-animate">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-8">홍보 영상</h3>
+                    <div class="mx-auto max-w-sm aspect-[9/16] rounded-xl overflow-hidden shadow-2xl shadow-blue-500/20">
+                        <iframe class="w-full h-full" 
+                                src="https://www.youtube.com/embed/VVTk0P1JeYg?mute=1&autoplay=1&loop=1&playlist=VVTk0P1JeYg" 
+                                title="DASS 2025 CONFERENCE 홍보 영상" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="greetings" class="py-20 md:py-32 bg-gray-950/95">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center scroll-animate">인사말</h2>
+                <div class="mt-16 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+                    
+                    <div class="scroll-animate bg-gray-900 p-8 rounded-xl shadow-lg flex flex-col h-full">
+                        <div class="flex items-center gap-6 mb-8">
+                            <img src="https://i.ibb.co/7t9cJqDK/image.jpg" alt="강신웅 조직위원장" class="w-24 h-24 rounded-lg object-cover flex-shrink-0">
+                            <h3 class="text-2xl font-bold text-blue-400">조직위원장 인사말</h3>
+                        </div>
+                        <div class="prose prose-invert max-w-none text-gray-300 prose-p:leading-relaxed prose-p:mb-4 flex-grow">
+                            <p>존경하는 내빈 여러분, 그리고 치과의사 선배, 후배, 동료 여러분께 진심으로 감사의 인사를 전합니다.</p>
+                            <p>디지털 기술의 혁신이 치의학의 모든 영역에 깊은 변화를 가져오고 있는 지금, 우리는 변화의 중심에 서 있습니다. 이 변화의 물결 속에서, DASS 학술대회가 "7 Masters, 7 Insights"라는 주제로 여러분과 함께할 수 있게 된 것을 큰 기쁨과 자부심으로 생각합니다.</p>
+                            <p>이번 대회는 디지털 치의학의 발전과 최신 트렌드를 중심으로, 국내 최고의 연자들과 함께 실질적 지식과 깊은 통찰을 나누는 소중한 자리가 될 것입니다. 특히, 젊은 치과의사 여러분의 열정과 참여가 이번 대회의 가장 큰 힘임을 다시 한 번 느낍니다. 여러분의 발표와 토론이 모두에게 영감을 주고, 더 나은 미래를 향한 동기부여가 되길 진심으로 바랍니다.</p>
+                            <p>이번 초록집이 단순한 자료집을 넘어, 여러분과 함께한 소중한 시간의 기록이자, 앞으로의 도전을 응원하는 메시지가 되길 소망합니다.</p>
+                            <p>마지막으로, 바쁘신 와중에도 이번 학술대회를 위해 지원해 주신 모든 분께 깊이 감사드립니다. 여러분의 열정이 모여 빛나는 자리가 되길 기대하며, 모두의 건강과 행복을 기원합니다.</p>
+                            <p>감사합니다.</p>
+                        </div>
+                        <p class="mt-8 text-right font-semibold text-gray-300 leading-relaxed">
+                            2025 DASS 학술대회 조직위원장<br>
+                            강신웅 드림
+                        </p>
+                    </div>
+
+                    <div class="scroll-animate bg-gray-900 p-8 rounded-xl shadow-lg flex flex-col h-full">
+                        <div class="flex items-center gap-6 mb-8">
+                            <img src="https://i.ibb.co/9kG486JF/image.jpg" alt="장호열 학술대회장" class="w-24 h-24 rounded-lg object-cover flex-shrink-0">
+                            <h3 class="text-2xl font-bold text-blue-400">학술대회장 인사말</h3>
+                        </div>
+                        <div class="prose prose-invert max-w-none text-gray-300 prose-p:leading-relaxed prose-p:mb-4 flex-grow">
+                            <p>디지털 기술의 발전은 치의학의 진료 방식뿐 아니라, 우리가 환자를 대하는 태도와 치료의 결과까지도 근본적으로 변화시키고 있습니다.</p>
+                            <p>이 변화의 흐름 속에서 DASS(Digital Art & Science Society)는 2023년, 치의학의 예술성과 과학성을 균형 있게 조화시키기 위한 치과의사들의 자발적인 모임으로 출발하였습니다.</p>
+                            <p>기술 중심이 아닌 사람 중심의 디지털 진료, '빠름'이 아닌 정확하고 감동적인 진료를 고민하며, DASS는 그 철학을 임상에 녹여내는 방법을 꾸준히 탐구해 왔습니다.</p>
+                            <p>이번 2025 DASS 학술대회는 "7 Masters, 7 Insights"라는 주제로 국내 유수의 학술단체 대표 연자들과 함께 디지털 치의학의 실질적 지식과 통찰을 공유하고자 합니다.</p>
+                            <p>앞으로도 DASS는 단순한 기술의 나열이 아닌, 기술과 감성, 예술과 과학이 교차하는 임상 철학을 공유하는 열린 공간으로 성장할 것입니다.</p>
+                            <p>짧은 하루지만, 이 자리가 디지털 치의학의 미래를 함께 모색하는 뜻깊은 시간이 되길 바랍니다.</p>
+                            <p>감사합니다.</p>
+                        </div>
+                        <p class="mt-8 text-right font-semibold text-gray-300 leading-relaxed">
+                            2025 DASS 학술대회 대회장<br>
+                            장호열 드림
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="program" class="py-20 md:py-32 bg-gray-950/95">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center scroll-animate">프로그램</h2>
+                <div id="program-timeline" class="mt-16 max-w-5xl mx-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="speakers" class="py-20 md:py-32 bg-gray-950/95">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center scroll-animate">연자 소개</h2>
+                <p class="text-center text-gray-400 mt-4 max-w-2xl mx-auto scroll-animate">The Magnificent Seven: 각 분야 최고의 전문가들이 치과계의 미래를 위한 생존 인사이트를 공유합니다.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-8 mt-16">
+                    <a href="speaker_im_jeong_ryeol.html" class="scroll-animate group block bg-gray-800/50 p-4 rounded-xl text-center transition-all duration-300 hover:bg-blue-900/40 hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-2 h-full">
+                        <img src="https://i.ibb.co/03Y504h/image.jpg" alt="임정열 원장" class="w-full aspect-[4/5] object-cover rounded-lg mb-4">
+                        <h3 class="font-bold text-lg text-white">임정열 원장</h3>
+                        <p class="text-blue-400 text-sm">BDPG</p>
+                    </a>
+                    <a href="speaker_jeong_seok_hwan.html" class="scroll-animate group block bg-gray-800/50 p-4 rounded-xl text-center transition-all duration-300 hover:bg-blue-900/40 hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-2 h-full">
+                        <img src="https://i.ibb.co/zWY0PMgN/image.jpg" alt="정석환 원장" class="w-full aspect-[4/5] object-cover rounded-lg mb-4">
+                        <h3 class="font-bold text-lg text-white">정석환 원장</h3>
+                        <p class="text-blue-400 text-sm">DASS</p>
+                    </a>
+                    <a href="speaker_park_young_jun.html" class="scroll-animate group block bg-gray-800/50 p-4 rounded-xl text-center transition-all duration-300 hover:bg-blue-900/40 hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-2 h-full">
+                        <img src="https://i.ibb.co/fzf8qYwm/image.jpg" alt="박영준 원장" class="w-full aspect-[4/5] object-cover rounded-lg mb-4">
+                        <h3 class="font-bold text-lg text-white">박영준 원장</h3>
+                        <p class="text-blue-400 text-sm">SKCD</p>
+                    </a>
+                    <a href="speaker_jang_ho_yeol.html" class="scroll-animate group block bg-gray-800/50 p-4 rounded-xl text-center transition-all duration-300 hover:bg-blue-900/40 hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-2 h-full">
+                        <img src="https://i.ibb.co/9kG486JF/image.jpg" alt="장호열 원장" class="w-full aspect-[4/5] object-cover rounded-lg mb-4">
+                        <h3 class="font-bold text-lg text-white">장호열 원장</h3>
+                        <p class="text-blue-400 text-sm">DASS</p>
+                    </a>
+                    <a href="speaker_jo_seong_geun.html" class="scroll-animate group block bg-gray-800/50 p-4 rounded-xl text-center transition-all duration-300 hover:bg-blue-900/40 hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-2 h-full">
+                        <img src="https://i.ibb.co/DgQD8vWT/image.jpg" alt="조성근 원장" class="w-full aspect-[4/5] object-cover rounded-lg mb-4">
+                        <h3 class="font-bold text-lg text-white">조성근 원장</h3>
+                        <p class="text-blue-400 text-sm">APEX</p>
+                    </a>
+                    <a href="speaker_shin_in_sun.html" class="scroll-animate group block bg-gray-800/50 p-4 rounded-xl text-center transition-all duration-300 hover:bg-blue-900/40 hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-2 h-full">
+                        <img src="https://i.ibb.co/yns6W8m5/image.jpg" alt="신인순 대표" class="w-full aspect-[4/5] object-cover rounded-lg mb-4">
+                        <h3 class="font-bold text-lg text-white">신인순 대표</h3>
+                        <p class="text-blue-400 text-sm">INPOWER</p>
+                    </a>
+                    <a href="speaker_kim_do_hee.html" class="scroll-animate group block bg-gray-800/50 p-4 rounded-xl text-center transition-all duration-300 hover:bg-blue-900/40 hover:shadow-lg hover:shadow-blue-500/20 transform hover:-translate-y-2 h-full">
+                        <img src="https://i.ibb.co/xNzZdYb/image.jpg" alt="김도희 원장" class="w-full aspect-[4/5] object-cover rounded-lg mb-4">
+                        <h3 class="font-bold text-lg text-white">김도희 원장</h3>
+                        <p class="text-blue-400 text-sm">DASS</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="posters" class="py-20 md:py-32 bg-gray-950/95">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center scroll-animate">포스터</h2>
+                <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="scroll-animate bg-gray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full">
+                        <a href="poster_detail.html?img=https%3A%2F%2Fi.ibb.co%2F4gwm5FJ3%2F2-4x-resize.jpg&title=%ED%8F%AC%EC%8A%A4%ED%84%B0%201&name=DASS_Conference_Poster_1.jpg" class="block cursor-pointer flex-grow">
+                            <img src="https://i.ibb.co/4gwm5FJ3/2-4x-resize.jpg" alt="포스터 1" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full">
+                        <a href="poster_detail.html?img=https%3A%2F%2Fi.ibb.co%2FynydYh68%2F2.jpg&title=%ED%8F%AC%EC%8A%A4%ED%84%B0%202&name=DASS_Conference_Poster_2.jpg" class="block cursor-pointer flex-grow">
+                            <img src="https://i.ibb.co/ynydYh68/2.jpg" alt="포스터 2" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-blue-500/20 transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full">
+                         <a href="poster_detail.html?img=https%3A%2F%2Fi.ibb.co%2FQ7MKFMbh%2F4-2-4x-resize.jpg&title=%ED%8F%AC%EC%8A%A4%ED%84%B0%203&name=DASS_Conference_Poster_3.jpg" class="block cursor-pointer flex-grow">
+                            <img src="https://i.ibb.co/Q7MKFMbh/4-2-4x-resize.jpg" alt="포스터 3" class="w-full h-full object-cover">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prizes" class="py-20 md:py-32 bg-gray-950/95">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center scroll-animate">경품 안내</h2>
+                <p class="text-center text-gray-400 mt-4 max-w-3xl mx-auto scroll-animate">컨퍼런스를 후원해주시는 업체에서 참가자 분들을 위해 푸짐한 경품을 마련해주셨습니다.</p>
+                <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto text-left">
+                    <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/x86BRjM7/image.png">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">서티라이프</h3>
+                        <div class="bg-blue-900/30 text-blue-300 px-3 py-1 rounded-md text-sm font-semibold mb-3 inline-block self-start">모든 참가자 증정 (병원 당 1ea)</div>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>카카오AI 스피커 (17만원 상당)</li>
+                            <li>카카오챗봇 무상 설치 (50만원) + 3개월 무료사용권 (60만원)</li>
+                        </ul>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/nqs17rQG/image.jpg">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">하이니스</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>하이니스 넥스처 300만원 교환권</li>
+                            <li>하이니스 넥스처 200만원 교환권</li>
+                            <li>하이니스 넥스처 50만원 교환권</li>
+                        </ul>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/svhYmW1c/image.jpg">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">리뉴메디칼</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>스터링크 라이트 한대 (590만원 상당)</li>
+                            <li>토비스체온계 3대 (각 57만원 상당)</li>
+                            <li>하이겐트 1박스 (10만원) 20명</li>
+                        </ul>
+                    </div>
+                     <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/PzfsRPMQ/image.png">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">덴츠플라이시로나</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>밀링버 세트</li>
+                            <li>프라임스캔 일회용 슬리브</li>
+                            <li>양산 10개</li>
+                        </ul>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/TMmmPvjL/image.png">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">메디클러스</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>선착순 100명: 바이오세라믹 실러 One-Fil 50개 + VPT용 One-fil Putty Injectable (6만원 상당)</li>
+                            <li>경품: 롯데상품권 10만원</li>
+                        </ul>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/kVMfg9FC/image.jpg">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">더원덴탈</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Revea. S 스케일러 미온수 공급 장치 (33만원) 3개</li>
+                        </ul>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/jkKgwszS/image.png">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">두리덴탈</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Neo spectra 레진 20개 (5만원 상당)</li>
+                        </ul>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/LXwt89gC/image.png">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">오스템</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>뷰센칫솔 세트 (참석자 전원 증정)</li>
+                        </ul>
+                    </div>
+                    <div class="scroll-animate bg-gray-800/50 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col h-full prize-trigger cursor-pointer hover:border-blue-500 transition-colors" data-prize-img="https://i.ibb.co/gMRx22H3/image.jpg">
+                        <h3 class="text-xl font-bold text-blue-400 mb-4">덴탈스튜디오</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Jang's 이지 발치 세트</li>
+                            <li>Jang's 터널링 세트</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-20 scroll-animate">
+                    <h3 class="text-2xl font-bold text-blue-400 mb-8 text-center">경품 홍보 영상</h3>
+                    <div class="mx-auto max-w-sm aspect-[9/16] rounded-xl overflow-hidden shadow-2xl shadow-blue-500/20">
+                        <iframe class="w-full h-full" 
+                                src="https://www.youtube.com/embed/LLxheTeg42Q?mute=1&autoplay=1&loop=1&playlist=LLxheTeg42Q" 
+                                title="경품 홍보 영상" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <p class="mt-12 text-gray-500 text-center scroll-animate">※ 경품 내역은 주최 및 후원사 사정에 따라 변경될 수 있습니다.</p>
+            </div>
+        </section>
+
+        <section id="venue" class="py-20 md:py-32 bg-gray-950/95">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title scroll-animate">오시는 길</h2>
+                <div class="mt-12 scroll-animate max-w-4xl mx-auto bg-gray-900 p-8 rounded-xl shadow-lg flex flex-col md:flex-row gap-8 items-center">
+                   <div class="md:w-1/2 text-left">
+                       <h3 class="text-2xl font-bold text-blue-400 mb-4">대전신협중앙회관</h3>
+                       <p class="text-gray-400 mb-2"><i data-lucide="map-pin" class="inline-block w-4 h-4 mr-2"></i>대전 서구 둔산북로 121</p>
+                       <p class="text-gray-400 mb-4">(둔산동 923)</p>
+                       <p class="text-gray-400">컨퍼런스가 개최될 대전신협중앙회관입니다. 대중교통 및 자가용 이용 시 참고해 주시기 바랍니다.</p>
+                       <div class="mt-6 flex items-center space-x-6">
+                           <a href="https://naver.me/FCACvkyX" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center">네이버 지도로 보기 <i data-lucide="arrow-right" class="inline-block w-4 h-4 ml-1"></i></a>
+                           <a href="https://www.google.co.kr/maps/place/%EC%8B%A0%ED%98%91%EC%A4%91%EC%95%99%ED%9A%8C+%EC%A4%91%EC%95%99%EB%B3%B8%EB%B6%80/data=!4m11!1m2!2m1!1z7Iug7ZiR7KSR7JWZ7ZqMIOuMgOyghOy2qeuCqOyngOyXreuzuOu2gA!3m7!1s0x35654bd88a540b03:0xd7c0787140f1b68e!8m2!3d36.3583025!4d127.3817429!10e1!15sCijsi6DtmJHspJHslZntmowg64yA7KCE7Lap64Ko7KeA7Jet67O467aAIgOIAQFaLiIs7Iug7ZiR7KSR7JWZ7ZqMIOuMgOyghCDstqnrgqgg7KeA7JetIOuzuOu2gCSAQxjcmVkaXRfdW5pb26aASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTXRPVXBJU0RsUlJSQUKqAYgBCg0vZy8xMWJjNjJ6ZmdwCgsvZy8xNTVzd3cxOBABKhQiEOyLoO2YkSDspJHslZntmowoCTIgEAEiHHt92fESP4WBXN-Y371ijggUq25Hj7ATW2V8TgsyMBACIizsi6DtmJEg7KSR7JWZ7ZqMIOuMgOyghCDstqnrgqgg7KeA7JetIOuzuOu2gOABAPoBBAgAEBI!16s%2Fg%2F12276zbf?hl=ko&entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors inline-flex items-center">구글 지도로 보기 <i data-lucide="arrow-right" class="inline-block w-4 h-4 ml-1"></i></a>
+                       </div>
+                   </div>
+                   <div class="md:w-1/2 w-full h-64 md:h-auto md:aspect-square rounded-lg overflow-hidden">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.255979505677!2d127.37894391527712!3d36.35515208004245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565494f113a30c5%3A0x28599ab7f583f7!2z7Iug7KCV7KSR7JWZ7JWM7ZSM7J2A7ZSM6rSA!5e0!3m2!1sko!2skr!4v1689879955432!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="register" class="py-20 md:py-32 bg-gray-950/95">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title scroll-animate">사전 등록</h2>
+                <div class="mt-12 scroll-animate max-w-2xl mx-auto bg-blue-900/20 border border-blue-800 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-blue-300 mb-6">등록비 안내</h3>
+                    <div class="text-lg space-y-4 text-gray-300 mb-6 text-left max-w-sm mx-auto">
+                        <div class="flex justify-between items-center border-b border-gray-700 pb-3">
+                            <span class="text-gray-400">DASS 정회원</span>
+                            <span class="font-semibold text-white">3만원</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-700 pb-3">
+                            <span class="text-gray-400">치과의사 (사전등록)</span>
+                            <span class="font-semibold text-white">5만원</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-gray-700 pb-3">
+                            <span class="text-gray-400">치과 스텝 및 학생</span>
+                            <span class="font-semibold text-white">3만원</span>
+                        </div>
+                    </div>
+                    <p class="text-yellow-400 text-center mb-8 text-md">※ 현장 등록 시 <strong>2만원</strong>이 추가됩니다.</p>
+                    <h3 class="text-2xl font-bold text-blue-300 mb-4">등록비 입금 계좌</h3>
+                    <p class="text-xl font-mono bg-gray-800 p-4 rounded-lg">신협 137-007-695536 (김병준)</p>
+                    <p class="text-gray-400 mt-4">입금 후 등록 신청을 완료해주세요.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKUTKMOy875yeyxvy6xMUjJuxqRyuxWkCfSptj2m-RnbMh3A/viewform" target="_blank" rel="noopener noreferrer" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105">
+                        사전등록하기
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="relative py-12 overflow-hidden bg-gray-950/95">
+        <div class="absolute inset-0 w-full h-full pointer-events-none">
+            <div class="bullet from-left" style="top: 15%; animation-duration: 7s; animation-delay: 0s;"></div>
+            <div class="bullet from-left" style="top: 45%; animation-duration: 9s; animation-delay: 2s;"></div>
+            <div class="bullet from-left" style="top: 75%; animation-duration: 6s; animation-delay: 5s;"></div>
+            
+            <div class="bullet from-right" style="top: 30%; animation-duration: 8s; animation-delay: 1s;"></div>
+            <div class="bullet from-right" style="top: 60%; animation-duration: 6.5s; animation-delay: 3s;"></div>
+            <div class="bullet from-right" style="top: 90%; animation-duration: 7.5s; animation-delay: 6s;"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6 text-center text-gray-400">
+            <div class="mb-8">
+                <h4 class="font-semibold text-gray-200 mb-4">주최 / 주관</h4>
+                <p class="text-3xl text-gray-200 tracking-wider">DASS (Digital Art & Science Society)</p>
+            </div>
+            <div class="mb-8">
+                <h4 class="font-semibold text-gray-200 mb-4">후원</h4>
+                <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-gray-300">
+                    <span>서티라이프</span>
+                    <span>리뉴메디칼</span>
+                    <span>하이니스</span>
+                    <span>메디클러스</span>
+                    <span>더원덴탈</span>
+                    <span>덴츠플라이시로나</span>
+                    <span>오스템</span>
+                    <span>두리덴탈</span>
+                    <span>덴탈스튜디오</span>
+                    <span>이룸</span>
+                </div>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2025 DASS Conference. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm z-[100] flex items-center justify-center p-4 transition-opacity duration-300">
+        <div id="popup-content" class="bg-gray-800 text-gray-300 rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto p-8 relative opacity-0">
+            <button id="popup-close-button" class="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <h3 class="text-2xl md:text-3xl font-bold text-center text-yellow-400 mb-2">
+                학술대회 홍보하고 상품 받자!
+            </h3>
+            <p class="text-xl md:text-2xl font-bold text-center text-white mb-8">
+                홍보왕 선발 이벤트!
+            </p>
+            <div class="space-y-6 text-lg text-left text-gray-300">
+                <div>
+                    <p class="font-bold text-blue-300">■ 사전등록 기간</p>
+                    <p class="pl-5">* 8월 13일(수) ~ 9월 17일(수)</p>
+                </div>
+                <div>
+                    <p class="font-bold text-blue-300">■ 소개 이벤트 경품</p>
+                    <ul class="list-none pl-5 space-y-1">
+                        <li>- 1등 : 최신형 아이패드 (A16)</li>
+                        <li>- 2등 : 최신형 애플워치 (SE)</li>
+                        <li>- 3등 : 롯데상품권 10만원</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-blue-300">■ 참여방법</p>
+                    <p class="pl-5">- 사전등록시 '소개자' 명에 소개자 성함 기입</p>
+                </div>
+            </div>
+            <div class="mt-8 text-xs text-gray-400 text-left space-y-1">
+                <p>※ 사전등록 소개왕은 행사당일 공개됩니다.</p>
+                <p>※ 당첨된 경품은 DASS 행사장에서 직접수령(등록 취소 및 미참석 시 경품당첨 무효).</p>
+            </div>
+            <div class="mt-8 flex justify-between items-center flex-wrap gap-4">
+                <div class="flex items-center">
+                    <input type="checkbox" id="dont-show-today" class="h-4 w-4 rounded border-gray-600 bg-gray-700 text-blue-600 focus:ring-blue-600 focus:ring-offset-gray-800">
+                    <label for="dont-show-today" class="ml-2 text-sm text-gray-400 cursor-pointer">오늘 하루 보지 않기</label>
+                </div>
+                <button id="popup-action-close-button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition-colors">
+                    닫기
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Popup Modal -->
+    <div id="image-popup-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm z-[100] flex items-center justify-center p-4 transition-opacity duration-300">
+        <div class="relative">
+            <button id="image-popup-close-button" class="absolute -top-4 -right-4 text-gray-400 hover:text-white transition-colors bg-gray-800 rounded-full p-1 z-10">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <img id="popup-image" src="" alt="경품 이미지" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg transition-transform duration-300 ease-out">
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
